@@ -3,13 +3,13 @@
   var main_obj, sub_obj;
 
   main_obj = {
-    func: function(name) {
+    exec: function(name) {
       return console.log(name);
     }
   };
 
   sub_obj = {};
 
-  main_obj.func.call(sub_obj, "command pattern");
+  main_obj.exec.call(sub_obj, "command pattern");
 
 }).call(this);
