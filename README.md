@@ -1,2 +1,2 @@
-Classical Object-oriented design patterns, implemeted in Javascript - using Coffeescript.
+Classical object-oriented design patterns, implemented in Javascript - using Coffeescript.
 
