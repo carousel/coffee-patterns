@@ -2,28 +2,36 @@
 (function() {
   var arr, i, len;
 
-  arr = ["blue", "green", "red", "yellow", "black"];
+  arr = ["begin", "middle", "end"];
 
   i = 0;
 
   len = arr.length;
 
-  this.obj = {};
-
-  obj.current = function() {
-    return arr[i];
-  };
-
-  obj.next = function() {
-    if (arr[i] === "black") {
-      this.reset();
+  this.obj = {
+    prev: function() {
+      if (arr[i] === "begin") {
+        this.end();
+        return arr[i];
+      }
+      return arr[--i];
+    },
+    current: function() {
       return arr[i];
+    },
+    next: function() {
+      if (arr[i] === "end") {
+        this.begin();
+        return arr[i];
+      }
+      return arr[++i];
+    },
+    begin: function() {
+      return i = 0;
+    },
+    end: function() {
+      return i = arr.length - 1;
     }
-    return arr[++i];
-  };
-
-  obj.reset = function() {
-    return i = 0;
   };
 
 }).call(this);
