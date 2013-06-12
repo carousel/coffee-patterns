@@ -4,7 +4,7 @@
 
   main_obj = {
     exec: function(name) {
-      return console.log(name);
+      return name;
     }
   };
 

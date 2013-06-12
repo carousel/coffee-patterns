@@ -2,7 +2,7 @@
 
 main_obj =
     exec:(name)->
-        console.log name
+        name
 
 sub_obj = {}
 
