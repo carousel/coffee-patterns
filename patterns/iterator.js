@@ -11,7 +11,7 @@
   this.obj = {
     prev: function() {
       if (arr[i] === "begin") {
-        this.end();
+        obj.end();
         return arr[i];
       }
       return arr[--i];
@@ -21,7 +21,7 @@
     },
     next: function() {
       if (arr[i] === "end") {
-        this.begin();
+        obj.begin();
         return arr[i];
       }
       return arr[++i];

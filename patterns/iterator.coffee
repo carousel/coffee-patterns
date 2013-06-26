@@ -9,7 +9,7 @@ len = arr.length
 this.obj = 
     prev:()->
         if arr[i] is "begin"
-            this.end()
+            obj.end()
             return arr[i]
         arr[--i]
 
@@ -18,7 +18,7 @@ this.obj =
 
     next:()->
         if arr[i] is "end"
-            this.begin()
+            obj.begin()
             return arr[i]
         arr[++i]
 
@@ -27,6 +27,5 @@ this.obj =
 
     end:()->
         i=arr.length-1
-
 
 
