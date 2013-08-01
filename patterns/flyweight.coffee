@@ -1,5 +1,6 @@
+# Structural
 #flyweight design patterns implemented with Coffeescript
-# globals are here just for the purpose of testins in the browser
+# globals are here just for the purpose of testing in the browser
 # miroslav.trninic@gmail.com
 
 

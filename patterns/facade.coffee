@@ -1,3 +1,4 @@
+# Structural
 # Facade design pattern implemented with Coffeescript
 # Globals are here just for testing in the browser
 # miroslav.trninic@gmail.com

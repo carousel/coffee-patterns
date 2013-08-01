@@ -40,9 +40,9 @@
           }
           this.messages[val] = pub.topics[val];
           console.log("You are subscribed to " + title.toUpperCase() + " topic");
-        }
-        if (pub.topics[val] !== title) {
-          console.log("No such a topic");
+          if (pub.topics[val] !== title) {
+            console.log("No such a topic");
+          }
         }
       }
     }

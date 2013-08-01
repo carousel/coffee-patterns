@@ -1,4 +1,5 @@
-#command pattern implemented with Coffeescript
+#Behavioral
+#Command pattern implemented with Coffeescript
 
 main_obj =
     exec:(name)->

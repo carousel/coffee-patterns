@@ -2,10 +2,10 @@
 (function() {
   this.mediator = {
     mediate: function(x) {
-      if (x === "from obj2") {
-        return obj1.receive(x);
-      } else {
+      if (x === "from obj1") {
         return obj2.receive(x);
+      } else {
+        return obj1.receive(x);
       }
     }
   };

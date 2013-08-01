@@ -1,3 +1,4 @@
+# Structural
 # Decorator design pattern implemented with Coffeescript
 # Globals are here just for testing in the browser
 class  this.Main
@@ -12,12 +13,14 @@ this.addTax=(main)->
     v = parseInt(m)
     main.price = ()->
         v * 0.73 + " €"
+    main.price()
     
 this.addCosts=(main)->
     m = main.price()
     v = parseInt(m)
     main.price = ()->
         ( v + 16 ) + " €"
+    main.price()
 
 
 

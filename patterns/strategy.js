@@ -7,6 +7,8 @@
       return isString(user_input);
     } else if (typeof user_input === "number") {
       return isNum(user_input);
+    } else if (typeof user_input === "boolean") {
+      return isBool(user_input);
     }
   };
 
@@ -15,10 +17,9 @@
   i = 0;
 
   isString = function(user_input) {
-    if (user_input === "strategy pattern") {
+    if (user_input === "miro") {
       store[i++] = user_input;
-      console.log("Your input with the value of " + user_input + " has been verified and stored");
-      return "Your input values are " + store;
+      return console.log("Your input " + user_input + " has been stored");
     } else {
       return console.log("Wrong name");
     }
@@ -27,8 +28,7 @@
   isNum = function(user_input) {
     if (user_input > 10) {
       store[i++] = user_input;
-      console.log("Your input with the value of " + user_input + " has been verified and stored");
-      return "Your input values are " + store;
+      return console.log("Your input " + user_input + " has been stored");
     } else {
       return console.log("Wrong number");
     }

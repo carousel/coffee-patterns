@@ -1,7 +1,8 @@
+# Behavioral
 # Observer design pattern ( best known as publish/subscribe) with Coffeescript
 # Objects are global, for easier testing in the browser.
 
-this.pub = 
+@pub = 
     topics:[]
     publish:(title)->
         for key,val in @topics
@@ -13,8 +14,7 @@ this.pub =
             return
         @topics.push(title)
 
-
-this.sub = 
+@sub = 
     messages:[]
     subscribe:(title)->
         if pub.topics.length is 0
@@ -27,8 +27,8 @@ this.sub =
                     return
                 @messages[val] = pub.topics[val]
                 console.log  "You are subscribed to " + title.toUpperCase() + " topic"
-            if pub.topics[val] != title
-                console.log "No such a topic"
-                    
+                if pub.topics[val] != title
+                    console.log "No such a topic"
 
-
+#pub.publish("music")                    
+#sub.subscribe("music")

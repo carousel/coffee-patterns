@@ -21,9 +21,10 @@
 
     m = main.price();
     v = parseInt(m);
-    return main.price = function() {
+    main.price = function() {
       return v * 0.73 + " €";
     };
+    return main.price();
   };
 
   this.addCosts = function(main) {
@@ -31,9 +32,10 @@
 
     m = main.price();
     v = parseInt(m);
-    return main.price = function() {
+    main.price = function() {
       return (v + 16) + " €";
     };
+    return main.price();
   };
 
 }).call(this);

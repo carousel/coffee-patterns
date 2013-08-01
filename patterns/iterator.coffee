@@ -1,3 +1,4 @@
+# Behavioral 
 # Iterator design pattern with Coffeescript
 # Object is explicitly exported in global namespace ( for testing with console.log in the
 # browser )
