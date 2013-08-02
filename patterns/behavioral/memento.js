@@ -7,7 +7,7 @@
       this._prev = {};
       this.setProperty = function(key, val) {
         this[key] = val;
-        return this._prev[key] = val;
+        return this._prev[key] = this[key];
       };
       this.getProperty = function(key) {
         return this[key];

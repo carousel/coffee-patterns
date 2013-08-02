@@ -7,7 +7,7 @@ class Memento
         @_prev = {}
         @setProperty = (key,val)->
             @[key] = val
-            @_prev[key] = val
+            @_prev[key] = @[key]
         @getProperty = (key)->
             @[key]
 
