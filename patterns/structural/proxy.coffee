@@ -5,11 +5,14 @@
 this.mainO = 
     name : "miro"
     getName: ()->
-        console.log @name
+        @name
 
 
 this.Proxy =
     proxy : (pass)->
+        if clientO.name is mainO.name
+            console.log "You already have that name"
+            false
         if pass is 123 and ( mainO.name is "miro" )
             mainO.getName()
         else
@@ -17,4 +20,4 @@ this.Proxy =
 
 this.clientO = 
     getMainName : (pass) ->
-        Proxy.proxy(pass)
+       @.name = Proxy.proxy(pass)
