@@ -1,5 +1,4 @@
-<h2>Classical object-oriented design patterns,implemented in Javascript/Coffeescript.
-</h2>
-<p>written by Miroslav Trninic</p>
-<p>miroslav.trninic@gmail.com</p>
+<h3>Classical object-oriented design patterns implemented in Javascript/Coffeescript.
+</h3>
+<a href = "mailto:miroslav.trninic@gmail.com">Written my Miroslav Trninic</a>
 
