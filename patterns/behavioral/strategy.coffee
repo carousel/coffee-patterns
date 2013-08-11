@@ -4,12 +4,12 @@
 # miroslav.trninic@gmail.com
 
 
-this.client=(user_input)->
+@.client=(user_input)->
     if typeof user_input is "string" then isString(user_input)
     else if typeof user_input  is "number" then isNum(user_input)
     else if typeof user_input is "boolean" then isBool(user_input)
 
-this.store = []
+@.store = []
 i=0
 
 isString=(user_input)->

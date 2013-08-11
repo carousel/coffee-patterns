@@ -10,7 +10,7 @@ this.mainO =
 
 this.Proxy =
     proxy : (pass)->
-        if clientO.name is mainO.name
+        if clientO.name = mainO.name
             console.log "You already have that name"
             false
         if pass is 123 and ( mainO.name is "miro" )

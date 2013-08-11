@@ -9,7 +9,7 @@
 
   this.Proxy = {
     proxy: function(pass) {
-      if (clientO.name === mainO.name) {
+      if (clientO.name = mainO.name) {
         console.log("You already have that name");
         false;
       }
