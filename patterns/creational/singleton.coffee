@@ -2,6 +2,7 @@
 # written by miroslav.trninic@gmail.com
 
 #singleton pattern as module with private and public properties
+# every object in JS is singleton
 @singleton = do()->
     private_property = "some privacy"
     {
