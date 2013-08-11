@@ -22,12 +22,21 @@ class Composite
                     console.log "Now we all have same methods"
                 key.method = ()->
                     console.log "Same method"
+        @remove_method = (arr,method)->
+            for key,val in arr
+                delete key[method]
+
 
 composer = new Composite()
 composer.compose([obj,obj2,obj3])
-#obj.method()
-#obj2.common()
-#obj3.method()
+obj.method()
+obj.common()
+obj2.common()
+obj3.method()
+composer.remove_method([obj,obj2,obj3],"common")
+obj.common()
+obj2.common()
+
 
 
 

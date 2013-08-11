@@ -32,6 +32,16 @@
         }
         return _results;
       };
+      this.remove_method = function(arr, method) {
+        var key, val, _i, _len, _results;
+
+        _results = [];
+        for (val = _i = 0, _len = arr.length; _i < _len; val = ++_i) {
+          key = arr[val];
+          _results.push(delete key[method]);
+        }
+        return _results;
+      };
     }
 
     return Composite;
@@ -41,5 +51,19 @@
   composer = new Composite();
 
   composer.compose([obj, obj2, obj3]);
+
+  obj.method();
+
+  obj.common();
+
+  obj2.common();
+
+  obj3.method();
+
+  composer.remove_method([obj, obj2, obj3], "common");
+
+  obj.common();
+
+  obj2.common();
 
 }).call(this);
