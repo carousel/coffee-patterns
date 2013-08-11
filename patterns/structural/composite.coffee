@@ -1,18 +1,18 @@
 # Structural
-# Composite design pattern
+# Composite design pattern 
+# note about this pattern - creates tree like strucure of objects
 # miroslav.trninic@gmail.com
 
 obj = 
     title:"First title",
     age:"unknown"
 
-
 obj2 = 
     name:"Some name"
 
-
 obj3 = 
     occupation:"Obj3 occupation"
+
 
 class Composite
     constructor: ()->
@@ -23,6 +23,7 @@ class Composite
                 key.method = ()->
                     console.log "Same method"
         @remove_method = (arr,method)->
+            console.warn "Deleted " + method + " method"
             for key,val in arr
                 delete key[method]
 

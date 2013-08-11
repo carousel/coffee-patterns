@@ -35,6 +35,7 @@
       this.remove_method = function(arr, method) {
         var key, val, _i, _len, _results;
 
+        console.warn("Deleted " + method + " method");
         _results = [];
         for (val = _i = 0, _len = arr.length; _i < _len; val = ++_i) {
           key = arr[val];
