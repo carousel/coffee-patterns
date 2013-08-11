@@ -1,5 +1,6 @@
 # Behavioral
-# Observer design pattern ( best known as publish/subscribe) with Coffeescript
+# Observer (pub/sub) design pattern ( best known as publish/subscribe) with Coffeescript
+# note about this patterns: there are some differences between observer and publish/subscribe pattern. Observed objects don't care about their observers, and publisher and subscribers are tightly connected through.common chanells. This implementation is more of publish/subscriber nature.
 # Objects are global, for easier testing in the browser.
 
 @pub = 
