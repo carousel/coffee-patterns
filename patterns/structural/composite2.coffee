@@ -19,6 +19,6 @@ class Composite2 extends SuperComposite
 leaf1 = new Composite()
 leaf2 = new Composite2()
 leaf3 = new Composite()
-leaf1.common()
-leaf2.common()
+#leaf1.common()
+#leaf2.common()
 

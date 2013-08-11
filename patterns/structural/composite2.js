@@ -49,8 +49,4 @@
 
   leaf3 = new Composite();
 
-  leaf1.common();
-
-  leaf2.common();
-
 }).call(this);
