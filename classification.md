@@ -1,6 +1,9 @@
 Creational:
 	Factory method - defer instantiation to subclasses
 	Singleton - restricts instantiation of one object from class
+	Builder 
+		- separates construction of object from representation
+		- step by step process
 
 Structural:
 	Adapter - adapts interface ( no state change )
