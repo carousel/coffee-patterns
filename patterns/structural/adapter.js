@@ -34,4 +34,6 @@
 
   driver = new Driver();
 
+  driver.listenJazz(0);
+
 }).call(this);

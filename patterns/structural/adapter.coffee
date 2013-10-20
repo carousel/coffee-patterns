@@ -18,5 +18,5 @@ class Driver
             console.log "Driver listening to " + jazzPlayer.getPlayer(index)
 
 driver = new Driver()
-#driver.listenJazz(0)
+driver.listenJazz(0)
 

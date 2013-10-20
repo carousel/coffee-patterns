@@ -1,6 +1,8 @@
 # factory design pattern simplifies creating of new objects
 # to be implemented
 
+        
+
 class Windows
     constructor: ()->
         @windows = "windows,"
@@ -11,21 +13,23 @@ class Roof
     constructor: ()->
         @roof = "roof"
 class House
-    constructor: (prop)->
-        @buildHouse = (prop)->
-            if prop is false or !prop
-                console.log "You can't have same house as mine"
-                false
-            else if prop is true
-                windows = new Windows()
-                doors = new Doors()
-                roof = new Roof()
-                console.log "My house has a " + windows.windows + doors.doors + "and a "+ roof.roof
-        @buildHouse(prop)
+    constructor: ()->
+        @buildHouse = ()->
+            windows = new Windows()
+            doors = new Doors()
+            roof = new Roof()
+            console.log "My house has a " + windows.windows + doors.doors + "and a "+ roof.roof
+        @buildHouse()
 
-# just go and build your house
-myNewHouse = new House(true)
-myFriendHouse = new House()
+class HouseFactory
+    constructor: ()->
+        new House()
+
+house = new HouseFactory()
+secondHouse = new HouseFactory()
+terminal.log(house)
+terminal.log(secondHouse)
+
 
 
 

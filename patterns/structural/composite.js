@@ -53,4 +53,18 @@
 
   composer.compose([obj, obj2, obj3]);
 
+  obj.method();
+
+  obj.common();
+
+  obj2.common();
+
+  obj3.method();
+
+  composer.remove_method([obj, obj2, obj3], "common");
+
+  obj.common();
+
+  obj2.common();
+
 }).call(this);
