@@ -18,3 +18,4 @@ TODO:
 Add new patterns:
     - state
     - builder
+    - chain
